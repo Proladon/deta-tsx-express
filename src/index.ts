@@ -1,7 +1,7 @@
 import express from 'express'
 import bodyParser from 'body-parser'
 import cors from 'cors'
-import * as runningAt from 'running-at'
+// import * as runningAt from 'running-at'
 import routes from '@/router'
 
 const app = express()
@@ -12,11 +12,12 @@ app.use(cors())
 app.use(routes)
 
 const envMode = process.env.MODE
+console.log(`mode: [${envMode}]`)
 if (envMode === 'development') {
   try {
     const PORT = process.env.PORT || 3000
-    console.log(`mode: [${envMode}]`)
-    app.listen(PORT, () => runningAt.print(PORT))
+    // app.listen(PORT, () => runningAt.print(PORT))
+    app.listen(PORT, () => console.log(`http://localhost:${PORT}`))
   } catch (err) {
     console.log(err)
     process.exit(1)
