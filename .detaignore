@@ -1,5 +1,6 @@
 src
 
+.eslintrc.cjs
 .prettierrc.toml
 README.md
 
