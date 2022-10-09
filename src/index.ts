@@ -2,24 +2,20 @@ import express from 'express'
 import bodyParser from 'body-parser'
 import cors from 'cors'
 import * as runningAt from 'running-at'
-import dotenv from 'dotenv'
-
-dotenv.config()
-
 import routes from '@/router'
 
 const app = express()
-
 app.use(bodyParser.json())
 app.use(cors())
 
 // Use router
 app.use(routes)
 
-if (process.env.MODE === 'development') {
+const envMode = process.env.MODE
+if (envMode === 'development') {
   try {
     const PORT = process.env.PORT || 3000
-
+    console.log(`mode: [${envMode}]`)
     app.listen(PORT, () => runningAt.print(PORT))
   } catch (err) {
     console.log(err)
