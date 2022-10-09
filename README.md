@@ -6,9 +6,9 @@ Deta with typescript + vite + express template
 - [FAQ](#faq)
 
 ## Features
-- 🔥HMR
 - 🔥Path alias
 - 🔥clean config
+- ❔hmr (currently `vite-node` not implement yet 😣)
 
 Deta currently is no too much starter template options to chose. In past, I always used [BetaHuhn/deta-express-starter](https://github.com/BetaHuhn/deta-express-starter), this starter template is very good, but some coding style and config dose not suit to me.
 
