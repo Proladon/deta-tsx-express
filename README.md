@@ -19,7 +19,7 @@ Finally, after tried `vite-node` and `tsup/esbuild` can resolves all the problem
 ## Quickstart
 1. install the deps
 ```
-$ yarn or npm install
+$ yarn
 ```
 2. development start
 ```
