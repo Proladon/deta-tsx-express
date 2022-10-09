@@ -38,9 +38,8 @@ $ yarn serve
 Default path alias is `@` target to `src` folder.  
 If you wanna change it, you need to config both in `tsconfig` and `vite.config` files.
 
+tsconfig.ts
 ```json
-#tsconfig.ts
-
 "compilerOptions": {
     "baseUrl": ".",
     "paths": {
@@ -48,10 +47,8 @@ If you wanna change it, you need to config both in `tsconfig` and `vite.config` 
     },
 }
 ```
-
+vite.config.ts
 ```ts
-# vite.config.ts
-
 resolve: {
     alias: [{ find: '@', replacement: resolve(__dirname, 'src') }],
 },
