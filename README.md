@@ -12,3 +12,43 @@ Some keys I want:
 
 And finally, after tried `vite-node` and `tsup/esbuild` can resolves all the problems.
 
+## Quickstart
+1. install the deps
+```
+$ yarn or npm install
+```
+2. development start
+```
+$ yarn dev
+```
+3. build for prod
+```
+$ yarn build
+```
+4. serve prod
+```
+$ yarn serve
+```
+
+## How to config path alias
+Default path alias is `@` target to `src` folder.  
+If you wanna change it, you need to config both in `tsconfig` and `vite.config` files.
+
+```json
+#tsconfig.ts
+
+"compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*":["./src/*"]
+    },
+}
+```
+
+```ts
+# vite.config.ts
+
+resolve: {
+    alias: [{ find: '@', replacement: resolve(__dirname, 'src') }],
+},
+```
