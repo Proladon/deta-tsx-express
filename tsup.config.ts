@@ -1,11 +1,11 @@
 import { defineConfig } from 'tsup'
 
 export default defineConfig({
-  entry: ['src/index.ts'],
-  splitting: false,
+  // entry: ['src/**/*.ts'], // keep all files structure
+  entry: ['src/index.ts'], // single file
   sourcemap: false,
   clean: true,
-  minify: false,
+  minify: true,
   dts: false,
   outDir: 'build',
 })
