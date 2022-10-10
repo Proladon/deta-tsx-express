@@ -1,4 +1,4 @@
-<h1 align="center">deta-vitexpress</h1>
+<h1 align="center">Deta-Vitexpress</h1>
 <p align="center">Deta with typescript + vite + express template</p>
 
 - [Quickstart](#quickstart)
