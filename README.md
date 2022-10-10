@@ -8,7 +8,7 @@ Deta with typescript + vite + express template
 ## Features
 - 🔥Path alias
 - 🔥Clean config
-- 🔥Mordern and Fast! (vite and esbuild)
+- 🔥Fast and minify! (vite and esbuild)
     - minify code (default)
     - treeshake (default)
 - ❔hmr (currently `vite-node` not implement yet 😣)
