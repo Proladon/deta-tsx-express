@@ -58,5 +58,5 @@ resolve: {
 ```
 
 ## FAQ
-- ### Why build output is single file ?
-If you want output to keep origin structure, just go `tsup.config.ts` and change the `entry` property.
+- ### Why build output is a single file ?
+If you want output to keep origin structure, just go `tsup.config.ts` and change the `entry` property, which is already comment code.
