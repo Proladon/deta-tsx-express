@@ -1,5 +1,5 @@
-# deta-vitexpress
-Deta with typescript + vite + express template
+<h1 align="center">deta-vitexpress</h1>
+<p>Deta with typescript + vite + express template</p>
 
 - [Quickstart](#quickstart)
 - [Config path alias](#config-path-alias)
