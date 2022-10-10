@@ -39,7 +39,7 @@ $ yarn serve
 
 ## Config path alias
 Default path alias is `@` target to the `src` folder.  
-If you wanna change it, you need to config both in `tsconfig` and `vite.config` files.
+If you wanna change it or add new alias, you need to config both in `tsconfig` and `vite.config` files like:
 
 tsconfig.ts
 ```json
