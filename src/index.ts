@@ -11,7 +11,7 @@ app.use(cors())
 // Use router
 app.use(routes)
 
-const envMode = process.env.MODE
+const envMode = process.env.MODE || 'unknow'
 console.log(`mode: [${envMode}]`)
 if (envMode === 'development') {
   try {
