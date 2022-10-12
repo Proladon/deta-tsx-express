@@ -1,2 +1,2 @@
 const app = require('./build/index.js')
-module.exports = app.default
+module.exports = app
