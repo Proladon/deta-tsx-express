@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "dev": "vite-node src/index.ts",
+    "dev": "cross-env MODE=development tsx watch src/index.ts",
     "build": "rimraf build && tsup",
-    "serve": "cross-env MODE=development node build/index.js"
+    "preview": "cross-env MODE=development node build/index.js"
   },
   "dependencies": {
     "body-parser": "^1.20.1",
@@ -19,7 +19,7 @@
     "rimraf": "^3.0.2",
     "running-at": "^0.3.22",
     "tsup": "^6.2.3",
-    "typescript": "^4.8.4",
-    "vite-node": "^0.24.0"
+    "tsx": "^3.11.0",
+    "typescript": "^4.8.4"
   }
 }
