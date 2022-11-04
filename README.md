@@ -1,5 +1,5 @@
 <h1 align="center">Deta Tsx Express Template</h1>
-<p align="center">Deta micros template with typescript + vite + express template</p>
+<p align="center">Deta micros template with typescript + tsx + express + tsup template</p>
 
 - [Quickstart](#quickstart)
 - [Config path alias](#config-path-alias)
