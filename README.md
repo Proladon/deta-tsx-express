@@ -15,11 +15,12 @@
     - treeshake (default)
 
 
-Deta currently is no too much starter template options to chose. In past, I always used [BetaHuhn/deta-express-starter](https://github.com/BetaHuhn/deta-express-starter), this starter template is very good, but some coding style and config dose not suit to me.
+Deta currently does not have that many starter template options to choose from. In past, I always used [BetaHuhn/deta-express-starter](https://github.com/BetaHuhn/deta-express-starter), this starter template is very good, but some coding style and config do not suit me.
 
-Me as a vue developer, I'm very used to use path alias. But implement typescript path alias always have problems after complied.
+As a vue developer, I'm very used to using path alias. But implementing typescript path alias always has problems after complie.
 
-Finally, after tried `vite-node` and `tsup/esbuild` can resolves all the problems.
+Finally, after tried `vite-node / tsx` and `tsup / esbuild` can resolves all the problems.  
+But `vite-node` `hmr(watch-mode)` has some problem that can't be used, so I'm choosing to use tsx
 
 ## Quickstart
 1. install the deps
