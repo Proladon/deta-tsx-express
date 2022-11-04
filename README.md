@@ -1,4 +1,4 @@
-<h1 align="center">Deta-Vitexpress</h1>
+<h1 align="center">Deta Tsx Express Template</h1>
 <p align="center">Deta micros template with typescript + vite + express template</p>
 
 - [Quickstart](#quickstart)
@@ -6,12 +6,14 @@
 - [FAQ](#faq)
 
 ## Features
-- 🔥Path alias
-- 🔥Clean config
-- 🔥Fast and minify! (vite and esbuild)
-    - minify code (default)
+- 🔥 Path alias
+- 🔥 Watch mode (like nodemon)
+- 🔥 Simple config
+- 🔥 ESNext syntax
+- 🔥 Fast and minify!
+    - minify build (default)
     - treeshake (default)
-- ❔hmr (currently `vite-node` not implement yet 😣)
+
 
 Deta currently is no too much starter template options to chose. In past, I always used [BetaHuhn/deta-express-starter](https://github.com/BetaHuhn/deta-express-starter), this starter template is very good, but some coding style and config dose not suit to me.
 
@@ -32,14 +34,14 @@ $ yarn dev
 ```
 $ yarn build
 ```
-4. serve prod
+4. preview prod
 ```
-$ yarn serve
+$ yarn preview
 ```
 
 ## Config path alias
 Default path alias is `@` target to the `src` folder.  
-If you wanna change it or add new alias, you need to config both in `tsconfig` and `vite.config` files like:
+If you wanna change it or add new alias, just modify `tsconfig` paths:
 
 tsconfig.ts
 ```json
@@ -49,12 +51,6 @@ tsconfig.ts
       "@/*":["./src/*"]
     },
 }
-```
-vite.config.ts
-```ts
-resolve: {
-    alias: [{ find: '@', replacement: resolve(__dirname, 'src') }],
-},
 ```
 
 ## FAQ
