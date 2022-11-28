@@ -1,6 +1,8 @@
 <h1 align="center">Deta Tsx Express Template</h1>
 <p align="center">Deta micros template with typescript + tsx + express + tsup template</p>
 
+[![Deploy](https://button.deta.dev/1/svg)](https://go.deta.dev/deploy?repo=https://github.com/Proladon/deta-tsx-express)
+
 - [Quickstart](#quickstart)
 - [Config path alias](#config-path-alias)
 - [FAQ](#faq)
